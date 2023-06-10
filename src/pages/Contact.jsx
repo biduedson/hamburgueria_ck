@@ -27,7 +27,7 @@ function Contact() {
     const sendemail = (e) => {
         e.preventDefault()
 
-        if (inputs.nome === '' || inputs.email === '' || inputs.message === '') {
+        if (inputs.name === '' || inputs.email === '' || inputs.message === '') {
             alert("Preencha todos os campos")
             return;
         }
