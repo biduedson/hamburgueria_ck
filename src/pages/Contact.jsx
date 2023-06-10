@@ -32,7 +32,7 @@ function Contact() {
             return;
         }
         const templateParams = {
-            fron_name: inputs.name,
+            from_name: inputs.name,
             message: inputs.message,
             email: inputs.email
         }
