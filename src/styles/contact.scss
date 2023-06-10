@@ -1,0 +1,251 @@
+@import '../styles//variables.scss';
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background: $black-color;
+    border-radius: 15px;
+    padding: 140px 0 60px 0;
+    
+    
+    .contact-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width:800px;
+        border-radius: 15px;
+        padding: 30PX;
+        @media screen and (max-width: 800px) {
+            flex-direction: column-reverse;
+            background: none;
+            gap: 25px;
+        }
+        @media screen and (max-width: 400px) {
+            width: 100%;
+            padding: 20px;
+        }
+       
+
+           .section-left-contact{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width:350px;
+            background: $red-color;
+            border-radius: 15px 0px 0px 15px; 
+            border-top: 1px solid $white-color;
+            border-left: 1px solid $white-color;
+            border-bottom:1px solid $white-color ;
+            padding: 30px;
+            @media screen and (max-width: 800px) {       
+                border: none; 
+                border-radius: 15px;
+  
+            }
+            @media screen and (max-width: 400px) {
+                width: 100%;
+            }
+            h1{
+                display: flex;
+                width:100%;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 20px;
+                line-height: 28px;
+                color: $white-color;
+                text-align: left;
+                margin-bottom: 51px;
+                @media screen and (max-width: 400px) {
+                    text-align: center;
+                    font-size:18px ;
+                }
+                
+            }
+            .contact-description{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width:281px;
+                height: 282px;
+                gap: 25px;
+                margin-bottom: 123px;
+                span{
+                    font-size: 16px;
+                }
+                p{
+                    display: flex;
+                    align-items: center;
+                    width:250px;
+                    border: 1px solid $white-color;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    background: $black-color;
+                    padding: 10px;
+                    color: $white-color;
+                    font-size: 12px;
+                    gap: 15px;
+                    &:hover{
+                        span{
+                            color: $red-color;
+                            transition: .5s;
+                            animation: spin 2s linear infinite;
+
+                        }
+                    }
+                    
+                }
+            }
+            .social-midias-contact{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                width:250px;
+                height: 35px;
+                padding-left: 20px;
+                gap: 15px;
+                align-self: center;
+                a{
+                    font-size: 25px;
+                    color: $white-color;
+                }
+            }
+            
+
+        }
+        .section-rigth-contact{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            height: auto;
+            background: $black-color;
+            border-radius: 0px 15px 15px 0px; 
+            border-top: 1px solid $white-color;
+            border-right: 1px solid $white-color;
+            border-bottom:1px solid $white-color ;
+            padding: 30px 10px 30px 10px;
+
+            @media screen and (max-width: 800px) {       
+                 width: 350px;
+                border: 1px solid $white-color; 
+                border-radius: 15px;    
+            }
+            @media screen and (max-width: 400px) {
+                width: 100%;
+            }
+           
+            
+            .form-header{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                width: 397px;
+                height: auto;
+                @media screen and (max-width: 400px) {
+                    width: 340px;
+                }
+                h1{
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 25px;
+                    line-height: 78px;
+                    color: $white-color;
+                    @media screen and (max-width: 400px) {   
+                        font-size: 18px;                       
+                      }    
+                }
+
+                gap: 10px;
+                #contact-presentation{
+                    display: flex;
+                    align-items: center;
+                    width: 80%; 
+                    height: auto; 
+                    @media screen and (max-width: 400px) {   
+                       flex-direction: column;
+                       width: 210px;                     
+                       }                   
+                    #logo-contact{
+                        width: 45px;
+                        height: 45px;
+                        animation: spin 2s linear infinite;
+
+                    }
+
+                    p{
+                        display: flex;
+                        flex-wrap: wrap;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size:  10px ;
+                        line-height: 8px;                        
+                        color: $white-color;
+                        
+                    }
+                }
+                
+            }
+            .form-content{
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+                gap: 10px;
+                padding: 30px;
+                @media screen and (max-width: 400px) {
+                    padding: 20px;
+                }
+                
+                label{
+                    color:$white-color;
+                    font-size: 14px;
+                    font-weight: 300;
+                    line-height: 150%;
+
+                    
+                }
+                input{
+                    width: 100%;
+                    height: 32px;
+                    background: #343333;
+                    border: 0.367572px solid #8D8D8D;
+                    border-radius: 2.20543px;
+                    
+                    
+                }
+                #textarea-contact{
+                    display: flex;
+                    width: 100%;
+                    background: #343333;
+                    border: 0.367572px solid #8D8D8D;
+                    border-radius: 2.20543px;
+                    height: 80px;
+                    resize: none;
+                }
+                button{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 120px;
+                    height: 32px;
+                    border-radius: 5px;
+                    border: 1px solid $black-color;
+                    background: #6088EE;
+                    color:$white-color;
+                    font-size: 10px;
+                    font-weight: 300;
+                    line-height: 150%;
+                    text-align: center;
+                    margin-bottom: 56px;
+                    cursor: pointer;
+        
+                }
+               
+        
+            }
+            
+           }
+    }
+  
+}

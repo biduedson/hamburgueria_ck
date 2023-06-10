@@ -1,0 +1,207 @@
+@import '../styles/variables.scss';
+.menu{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background:$black-color;
+    padding: 80px 0 20px 0;
+   
+
+    h1{
+      display: flex;
+      flex-direction: column;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 64px;
+      line-height: 48px;
+      text-align: center;
+      color: $white-color;
+      margin-top: 20px;
+      #menu-icon{
+        width: 180px;
+        height: 180px;
+      }
+    }
+
+    
+    .bts-menu-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 500px;
+        background: transparent;
+        gap: 10px;
+        margin: 20px 0 20px 0;
+        
+
+        button{
+            width: 113px;
+            height: 38px; 
+            background: transparent;
+            border:  1px solid $red-color;
+            border-radius: 20px;
+            color: $red-color;
+            cursor: pointer;
+            &:hover{
+                background: $red-color;
+                color: $white-color;
+                transition: .5s;
+            }
+            @media screen and (max-width:600px) {
+                width: 90px;
+                height: 40px; 
+            }
+            @media screen and (max-width:280px) {
+                width:70px;
+                height: 40px;
+                font-size:9px ; 
+            }
+        }
+    }
+       
+    .cards-hamburguers{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        justify-content: center;
+        grid-gap: 20px;
+        max-width: 80%;
+        height: auto;
+        @media screen and (max-width: 360px) {
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+        }
+       
+           
+        .card-harburguer{
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            justify-content: center;
+            text-align: center;
+            border-radius: 20px;
+            width: 100%;
+            height: auto;
+            border: 1px solid gray; 
+            padding: 10px;
+            background: $white-color;
+           
+            #hamburguer-photo{
+                width: 280px;
+                height: 280px;
+                object-fit: contain;
+                padding: 10px;               
+                &:hover{
+                    animation: pulse 1s forwards infinite;
+                    opacity: 1;
+                }
+                @media screen and (max-width:340px) {
+                    width: 240px;
+                    height: 240px;
+                    object-fit: contain;
+                }
+            }
+            
+            p{
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 14px;
+                text-align: justify;
+                padding: 15px;
+                color: $white-color; 
+                background: $red-color; 
+                border-radius: 15px;
+                @media screen and (max-width:350px) {
+                   font-size:10px ;
+                }
+            }
+            .description-burguer{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                
+                p{
+                    display: flex;
+                    width: 100%;
+                    align-items: center;
+                    justify-content: center;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;                   
+                    text-align: center;
+                    background: transparent;
+                    color: $yellow-color;                     
+                    border-radius: 15px;
+                }
+                .hot-burguer-icon{
+                    width: 45px;
+                }              
+            }
+
+            button{
+                display: flex;
+                width: 200px;
+                height: 40px;
+                justify-content: center;
+                align-items: center;
+                background: $red-color;
+                border: none;
+                border-radius: 20px;
+                color: $white-color;
+                margin-bottom: 10px;
+                cursor: pointer;
+                
+            }
+
+            .socials-link-menu{
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+
+                a{
+                    font-size: 28px;
+                    &:hover{     
+                     transform: scale(1.2);
+                     transition: 1s;
+                    }
+                 }
+                 #instagran{
+                     color: #d6249f;
+                     opacity: 0;
+                     animation: zoomIn 1s forwards;
+                     animation-delay: .8s;
+                 }
+         
+                 #facebook{
+                     color: $facebook-color;
+                     opacity: 0;
+                     animation: zoomIn 1s forwards;
+                     animation-delay: .9s;
+                 }
+         
+                 #whatsApp{
+                    color: $whatsApp-color;
+                    opacity: 0;
+                     animation: zoomIn 1s forwards;
+                     animation-delay: 1s;
+                 }
+                 small{
+                    color: $yellow-color;
+                 }
+
+                 
+                
+            }
+        }            
+    }
+}

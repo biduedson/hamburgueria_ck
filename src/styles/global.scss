@@ -1,0 +1,68 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,4B8r3B4p7yhRXuBWLqsQ546WR43cqQwrbXMDFnBi6vSJBeif8tPW85a7r7DM961Jvk4hdryZoByEp8GC8HzsqJpRN4FxGM9=swap');
+@import '../styles/variables.scss';
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  max-width: 1980px;
+  margin: 0 auto;
+  background: $black-color;
+}
+
+@keyframes slideRight{
+  0%{
+      transform: translateX(-100px);
+      
+  }
+  100%{
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes slideLeft{
+  0%{
+      transform: translateX(100px);
+  }
+  100%{
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes zoomIn{
+  0%{
+    transform:scale(0);
+  }
+  100%{
+    transform: translateX(1);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.2);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+@keyframes animation_menu {
+  to{
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+
