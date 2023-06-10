@@ -195,6 +195,24 @@
                      animation: zoomIn 1s forwards;
                      animation-delay: 1s;
                  }
+
+                 #tiktok{
+                    display: flex; 
+                    align-items: center;
+                    justify-content: center;
+                    align-self: baseline;                   
+                    width: 24px;
+                    height: 24px;
+                    margin-top: 2px;
+                    background: $black-color;
+                    color: $white-color;
+                    border-radius: 2px;
+                    opacity: 0;
+                     animation: zoomIn 1s forwards;
+                     animation-delay: 1s;
+                     font-size: 18px;
+
+                 }
                  small{
                     color: $yellow-color;
                  }
